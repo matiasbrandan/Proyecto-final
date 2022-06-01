@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    padding: 3px 0 3px 0;
+    background: #ffe0bd;
+}
+.nav{
+    margin: 20px;
+}
+.nav__conteinerImg {
+    display: inline-block;
+    border: solid red 8px;
+    border-radius: 50%;
+    position: x;
+    left: 100px;
+}
+.nav__conteinerImg a img{
+    height: 90px;
+    border-radius: 50%;
+}
+.nav__ul{
+    display: inline-block;
+    
+}
+.nav__li {
+    display: inline-block;
+    margin:0 40px 0 40px;
+   
+}
+.nav__li a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+    bottom: 40px;
+    left:400px;
+    text-transform: uppercase;
+}
+main {
+    margin-top: 50px;
+    padding: 40px 0 40px 0;
+}
+.section1__art h1 {
+    display: inline;
+    margin:0 45% 0 45%;
+    position: relative;
+    top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size:xx-large;
+    border: 1px double red;
+    border-radius: 30%;
+    background: #ffe0bd;
+}
+.section1__art img{
+    height: 500px;
+    width: 100%;
+    border-radius: 20%;
+}
+.section2__art2 ul li {
+    display: inline-block;
+    padding: 15px 30px 20px 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    position: relative;
+    left: 120px;
+    margin: 0 90px 20px 100px;
+}
+.section2__art3{
+   margin: 0 5% 0 5%;
+}
+.table{
+    border-spacing: 160px 10px;
+    border: red;
+}
+.table__rows img{
+    height: 160PX;
+    width: 160px;
+}
+.sectionProductos{
+    margin: 20px 0 20px 5px;
+}
+.sectionProductos__art {
+    display: inline-block ;
+    padding: 20px;
+}
+.sectionProductos li {
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    padding: 5px;
+}
+.sectionProductos__div1 {
+    position: relative;
+    bottom: 422px;
+}
+.sectionProductos__div2 {
+    position: relative;
+    bottom: 422px;
+}
+.sectionProductos__div3 {
+    position: relative;
+    bottom: 244px;
+}
+.sectionProductos__div4 {
+    position: relative;
+    bottom: 485px;
+}
+.sectionProductos__div5 {
+    position: relative;
+    bottom: 425px;
+}
+.sectionSucursales{
+    margin: 20px;
+}
+.article__div{
+    display: inline-block;
+    padding: 0 15px 0;
+}
+.article__div img {
+    display: inline;
+    height: 60px;
+    position: relative;
+    top: 20px;
+    border: solid red;
+    border-radius: 60%;
+}
+.article__div p{
+    display: inline;
+}
+.sectionContacto{
+    height: 300px;
+    display: inline-block;
+    margin: 20px;
+}
+.sectionContacto__text{
+    height: 100%;
+    display: inline-block;
+    background: #ffffba;
+    padding: 0 30px 0 0;
+    position: relative;
+    bottom: 230px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.sectionContacto__text p{
+    padding-left: 30px;
+    position:relative;
+    top:110px;
+}
+.sectionContacto__form{
+        display: inline-block;
+}
+#userName{
+    width: 300px;
+    height: 30px;
+}
+#userMail{
+    width: 300px;
+    height: 30px;
+}
+#userText{
+    width: 300px;
+    resize:none;
+}
+.sectionContacto__submit{
+    width: 100px;
+  position: relative;
+  left:100px;
+}
+        footer{
+    border: 1px solid black;
+   
+}
+.footer__div1{
+    height: 40px;
+    width: 30%;
+    display: inline-block;   
+    padding: 0 40px 10px 40px;
+}
+.footer__div1 h3{
+    padding-bottom: 5px;
+    text-align: center;
+    position: relative;
+    bottom: 19px;    
+}
+.footer__div1 p {
+    position: relative;
+    bottom: 20px;
+}
+.footer__div2{
+    height: 40px;
+    width: 30%;
+    display: inline-block;
+    padding: 0 40px 10px 40px;
+}
+.footer__div2 h3{
+    padding-bottom: 5px;
+    text-align: center
+
+}
+.footer__div3{
+    height: 40px;
+    width: 30%;
+    display: inline-block;
+    padding: 0 40px 10px 40px;
+}
+.footer__div3 h3{
+    padding-bottom: 5px;
+    text-align: center;
+    position: relative;
+    bottom: 7px;
+}
+.footer__div3 p {
+    position: relative;
+    bottom: 7px;
+    text-align: center;
+    padding: 3px 0 3px 0;
+}
+.footer__copy{
+    background: black;
+    color: white;
+    text-align: center;
+    margin-top: 6px;
+}
