@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Heladeria</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-            <div class="container">
-              <a class="navbar-brand" href="../index.html"><img src="../img/logo.jpg" class="img-fluid" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="container d-flex">
+              <div class="p-2 flex-grow-1">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo.jpg" class="img-fluid" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div class="p-2 flex-grow-1" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex justify-content-evenly">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="../index.html">Inico</a>
                   </li>
@@ -37,12 +38,6 @@
                     <a class="nav-link active" href="./contacto.html">contactos</a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                  </svg></button>
-                </form>
               </div>
             </div>
           </nav>
@@ -54,95 +49,29 @@
                 <img src="../img/fotoDeInicio.jpg" alt="helados">
             </article>
         </section>
-        <section class="sectionProductos">
-            <article class="sectionProductos__art" >
-                <h3>Cremas</h3>
-                <ul>
-                    <li>Banana Split Granizada</li>
-                    <li>Bananita Dulce</li>
-                    <li>Chantilly con Frutillas</li>
-                    <li>Crema Americana</li>
-                    <li>Crema Cookies</li>
-                    <li>Crema del Cielo</li>
-                    <li>Crema Rusa</li>
-                    <li>Crema Tramontana</li>
-                    <li>Flan con Dulce de Leche</li>
-                    <li>Frutos del Bosque</li>
-                    <li>Granizado de Chocolate</li>
-                    <li>Lemon Pie con Frutillas</li>
-                    <li>Mantecol</li>
-                    <li>Mascarpone con Frutos del Bosque</li>
-                    <li>Menta Granizada</li>
-                    <li>Quinotos al Whisky</li>
-                    <li>Sambayón</li>
-                    <li>Tiramisú</li>
-                    <li>Vainilla</li>
-                </ul>
-            </article>
-            <article class="sectionProductos__art">
-                <div class="sectionProductos__div1">
-                    <h3>Frutales al Agua</h3>
-                    <ul>
-                        <li>Ananá</li>
-                        <li>Frambuesa</li>
-                        <li>Frutilla al Agua</li>
-                        <li>Mandarina</li>
-                        <li> Mix Frutal</li>
-                    </ul>
+        <section class="sectionContacto">
+            <div  class="sectionContacto__text">
+                <p>
+                    Dejenos su comentario completando este formulario
+                </p>
+            </div>
+            <form action="get" enctype="text/plain"  class="sectionContacto__form">
+                <div class="sectionContacto__div">
+                    <label for="userName"></label>
+                    <input type="text" name="userNamer" id="userName" placeholder="Ingrese el nombre">
                 </div>
-            </article>
-            <article class="sectionProductos__art">
-                <div class="sectionProductos__div2">
-                    <h3>Dulce de leche</h3>
-                    <ul>
-                        <li>Dulce de Leche Tradicional</li>
-                        <li>Dulce de Leche con Nuez</li>
-                        <li>Dulce de Leche Granizado</li>
-                        <li>Súper Dulce de Leche</li>
-                        <li>Dulce de Leche Frahel</li>
-                    </ul>
+                <div class="sectionContacto__div">
+                    <label for="userMail"></label>
+                    <input type="email" name="userMail" id="userMail" placeholder="Ingrese el mail">
                 </div>
-            </article>
-            <article class="sectionProductos__art">
-                <div class="sectionProductos__div3">
-                    <h3>Chocolates</h3>
-                    <ul>
-                        <li>Chocolate Clásico</li>
-                        <li>Chocolate Bariloche</li>
-                        <li>Chocolate Blanco</li>
-                        <li>Chocolate con Dulce</li>
-                        <li>Chocolate con Pasas al Rhum</li>
-                        <li>Chocolate Alpino</li>
-                        <li>Bombóm Marroc</li>
-                        <li>Mousse de Chocolate</li>
-                        <li>Chocolate Amargo</li>
-                        <li>Chocolate Frahel</li>
-                        <li>Chocolate Kinder</li>
-                    </ul>
+                <div class="sectionContacto__div">
+                    <label for="userText"></label>
+                    <textarea name="userText" id="userText" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea>
                 </div>
-            </article>
-            <article class="sectionProductos__art">
-                <div class="sectionProductos__div4">
-                    <h3>Tortas</h3>
-                    <ul>
-                        <li>Torta Cookie</li>
-                        <li>Torta Chocolate</li>
-                        <li>Torta Frutilla</li>
-                    </ul>
+                <div class="sectionContacto__div">
+                    <input type="submit" class="sectionContacto__submit">
                 </div>
-            </article>
-            <article class="sectionProductos__art">
-                <div class="sectionProductos__div5">
-                    <h3>Paletas</h3>
-                    <ul>
-                        <li>Cielo</li>
-                        <li>Cookie</li>
-                        <li>Chocolate</li>
-                        <li>Dulce de leche</li>
-                        <li>Frutilla</li>
-                    </ul>
-                </div>
-            </article>
+            </form>
         </section>
     </main>
     <footer class="footer">
@@ -175,6 +104,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
