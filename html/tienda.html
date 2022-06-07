@@ -42,66 +42,243 @@
             </div>
           </nav>
     </header>
-    <main>
-        <section class="section1">
-            <article class="section1__art">
-                <h1>Heladeria</h1>
-                <img src="../img/fotoDeInicio.jpg" alt="helados">
-            </article>
-        </section>
-        <section class="sectionContacto">
-            <div  class="sectionContacto__text">
-                <p>
-                    Dejenos su comentario completando este formulario
-                </p>
+    <main class="main">
+      <!-- carrusel -->
+      <section >
+        <article id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1400">
+              <img src="../img/fotoDeInicio.jpg" class="d-block img-1" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carr-text">¿Ya compraste en la nueva tienda online?</h5>
+                <p class="carr-text">Puedes disfrutar de todos tus gustos y ofertas favoritos sin costo de envio.</p>
+                <a href="./tienda.html" class="carr-img"> Nueva tienda online</a>
+              </div>
             </div>
-            <form action="get" enctype="text/plain"  class="sectionContacto__form">
-                <div class="sectionContacto__div">
-                    <label for="userName"></label>
-                    <input type="text" name="userNamer" id="userName" placeholder="Ingrese el nombre">
+            <div class="carousel-item" data-bs-interval="1400">
+              <img src="../img/collage 1a.jpg" class="d-block img-1" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carr-text">¿Quiere dejar su comentario?</h5>
+                <p class="carr-text">Siga el siguiente enlace y complete el formulario</p>
+                <a href="./productos.html" class="carr-img"> Contacto </a>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1400">
+              <img src="../img/sucursal-1.jpg" class="d-block img-1" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carr-text">¿Ya has visitado alguno de nuestras sucursales?</h5>
+                <p class="carr-text">Encontraras la mejor atencion y los mejores precios es sus gustos favoritos</p>
+                <a href="./sucursales.html" class="carr-img">Sucursales</a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </article>
+      </section>
+      <!-- tienda -->
+      <section>
+        <article class="container">
+          <div class="accordion row" id="accordionExample">
+            <div class="accordion-item col-md-6">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Tarros
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault0">
+                    <label class="form-check-label" for="flexRadioDefault0">
+                      Elije una de las siguientes opciones
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      1/4 cuarto de kilo. $300
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      1/2 medio kilo. $450
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      3/4 tres cuartos de kilo. $600
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                    <label class="form-check-label" for="flexRadioDefault4">
+                      1 un kilo. $900
+                    </label>
+                  </div>
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Cremas
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                              <ul class="listaProductos">
+                                <li>Banana Split Granizada</li>
+                                <li>Bananita Dulce</li>
+                                <li>Chantilly con Frutillas</li>
+                                <li>Crema Americana</li>
+                                <li>Crema Cookies</li>
+                                <li>Crema del Cielo</li>
+                                <li>Crema Rusa</li>
+                                <li>Crema Tramontana</li>
+                                <li>Flan con Dulce de Leche</li>
+                                <li>Frutos del Bosque</li>
+                                <li>Granizado de Chocolate</li>
+                                <li>Lemon Pie con Frutillas</li>
+                                <li>Mantecol</li>
+                                <li>Mascarpone con Frutos del Bosque</li>
+                                <li>Menta Granizada</li>
+                                <li>Quinotos al Whisky</li>
+                                <li>Sambayón</li>
+                                <li>Tiramisú</li>
+                                <li>Vainilla</li>
+                            </ul> 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              Frutales al Agua
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                              <ul class="listaProductos">
+                                  <li>Ananá</li>
+                                  <li>Frambuesa</li>
+                                  <li>Frutilla al Agua</li>
+                                  <li>Mandarina</li>
+                                  <li> Mix Frutal</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              Dulce de leche
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                              <ul class="listaProductos">
+                                  <li>Dulce de Leche Tradicional</li>
+                                  <li>Dulce de Leche con Nuez</li>
+                                  <li>Dulce de Leche Granizado</li>
+                                  <li>Súper Dulce de Leche</li>
+                                  <li>Dulce de Leche Frahel</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                              Chocolates
+                            </button>
+                          </h2>
+                          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                            <ul class="listaProductos">
+                                <li>Chocolate Clásico</li>
+                                <li>Chocolate Bariloche</li>
+                                <li>Chocolate Blanco</li>
+                                <li>Chocolate con Dulce</li>
+                                <li>Chocolate con Pasas al Rhum</li>
+                                <li>Chocolate Alpino</li>
+                                <li>Bombóm Marroc</li>
+                                <li>Mousse de Chocolate</li>
+                                <li>Chocolate Amargo</li>
+                                <li>Chocolate Frahel</li>
+                                <li>Chocolate Kinder</li>
+                            </ul>
+                            </div>
+                          </div>
+                        </div>       
                 </div>
-                <div class="sectionContacto__div">
-                    <label for="userMail"></label>
-                    <input type="email" name="userMail" id="userMail" placeholder="Ingrese el mail">
+              </div>
+            </div>
+            <div class="accordion-item col-md-6">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
-                <div class="sectionContacto__div">
-                    <label for="userText"></label>
-                    <textarea name="userText" id="userText" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea>
+              </div>
+            </div>
+            <div class="accordion-item col-md-6">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
-                <div class="sectionContacto__div">
-                    <input type="submit" class="sectionContacto__submit">
-                </div>
-            </form>
-        </section>
+              </div>
+            </div>
+          </div>
     </main>
-    <footer class="footer">
-        <div class="footer__div1">
-            <h3>nosotros</h3>
-            <p>
-                Elaboramos momentos de alegría para compartir en familia.
+    <footer class="content footer">
+      <div class="row m-1">
+        <div class="col-md-4">
+          <h3>nosotros</h3>
+          <p>
+              Elaboramos momentos de alegría para compartir en familia.
 
-                Por eso seguimos creando recetas únicas, para que las disfutes y compartas.
-            </p>
-        </div>
-        <div class="footer__div2">
-            <h3 >productos</h3>
-            <p>
-                Contamos con una amplia oferta de productos pensados para todos los gustos y necesidades.
-                Helados diet y helados veganos.
-                Postres, tortas, paletas, baldes familiares.
-            </p>
-        </div>
-        <div class="footer__div3">
-            <h3>contactos</h3>
-            <p>2291 427812</p>
-            <p>2291 345678</p>
-            <p>helados@gmail.com</p>
-        </div>
-        <div class="footer__copy">
-            &copy; Matias brandan 
-        </div>
-    </footer>
-
+              Por eso seguimos creando recetas únicas, para que las disfutes y compartas.
+          </p>
+      </div>
+      <div class="col-md-4">
+          <h3 >productos</h3>
+          <p>
+              Contamos con una amplia oferta de productos pensados para todos los gustos y necesidades.
+              Helados diet y helados veganos.
+              Postres, tortas, paletas, baldes familiares.
+          </p>
+      </div>
+      <div class="col-md-4">
+          <h3>contactos</h3>
+          <p>2291 427812</p>
+          <p>2291 345678</p>
+          <p>helados@gmail.com</p>
+      </div>
+      <div class="col-md-12 d-flex justify-content-center">
+        &copy; Matias brandan 
+      </div>
+      </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 

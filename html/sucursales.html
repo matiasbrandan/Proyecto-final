@@ -42,66 +42,108 @@
             </div>
           </nav>
     </header>
-    <main>
-        <section class="section1">
-            <article class="section1__art">
-                <h1>Heladeria</h1>
-                <img src="../img/fotoDeInicio.jpg" alt="helados">
-            </article>
-        </section>
-        <section class="sectionContacto">
-            <div  class="sectionContacto__text">
-                <p>
-                    Dejenos su comentario completando este formulario
-                </p>
+    <main class="main">
+      <!-- carrusel -->
+      <section >
+        <article id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1400">
+              <img src="../img/fotoDeInicio.jpg" class="d-block img-1" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carr-text">¿Ya compraste en la nueva tienda online?</h5>
+                <p class="carr-text">Puedes disfrutar de todos tus gustos y ofertas favoritos sin costo de envio.</p>
+                <a href="./tienda.html" class="carr-img"> Nueva tienda online</a>
+              </div>
             </div>
-            <form action="get" enctype="text/plain"  class="sectionContacto__form">
-                <div class="sectionContacto__div">
-                    <label for="userName"></label>
-                    <input type="text" name="userNamer" id="userName" placeholder="Ingrese el nombre">
-                </div>
-                <div class="sectionContacto__div">
-                    <label for="userMail"></label>
-                    <input type="email" name="userMail" id="userMail" placeholder="Ingrese el mail">
-                </div>
-                <div class="sectionContacto__div">
-                    <label for="userText"></label>
-                    <textarea name="userText" id="userText" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea>
-                </div>
-                <div class="sectionContacto__div">
-                    <input type="submit" class="sectionContacto__submit">
-                </div>
-            </form>
-        </section>
+            <div class="carousel-item" data-bs-interval="1400">
+              <img src="../img/collage 1a.jpg" class="d-block img-1" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carr-text">¿Quiere dejar su comentario?</h5>
+                <p class="carr-text">Siga el siguiente enlace y complete el formulario</p>
+                <a href="./productos.html" class="carr-img"> Contacto </a>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1400">
+              <img src="../img/sucursal-1.jpg" class="d-block img-1" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="carr-text">¿Ya has visitado alguno de nuestras sucursales?</h5>
+                <p class="carr-text">Encontraras la mejor atencion y los mejores precios es sus gustos favoritos</p>
+                <a href="./sucursales.html" class="carr-img">Sucursales</a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </article>
+      </section>
+      <section class="container">
+        <article class="row">
+          <div class="col-md-12 ">
+            <h3 class="d-flex justify-content-center"> ¿No sabe donde estamos? </h3>
+            <p>Aqui podra ver todos nuestros puntos de venta y disfrutar de nuestros envios gratis</p>
+          </div>
+          <div class="col-md-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.6706253869133!2d-57.546325482556156!3d-38.00814249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc1877f65857%3A0xf93728c49d40a877!2sArenales%202329%2C%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1654526901578!5m2!1ses-419!2sar" width="300" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-md-4">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.232654765849!2d-57.55381868493129!3d-37.995033452210045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc01be3a315d%3A0x228b624b9b3a3f39!2sAv.%20Independencia%201538%2C%20B7600%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1654527239571!5m2!1ses-419!2sar" width="300" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+          </div>
+          <div class="col-md-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1869.443937049435!2d-57.55511391578256!3d-38.000054371329306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dea83763e413%3A0xd92149b61c183328!2sCatamarca%202099%2C%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1654527339875!5m2!1ses-419!2sar" width="300" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-md-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.585558925142!2d-57.58113336391679!3d-38.01886854613631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dec1d0d7c16d%3A0xa89d1ac5d7c8cda3!2sAv.%20de%20las%20Olimpiadas%20598%2C%20B7608DKN%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1654527474697!5m2!1ses-419!2sar" width="300" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-md-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.2047429487384!2d-57.549657784928556!3d-38.06561265626872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584ddff4b7e9b75%3A0xd8ddb1bbfe341d93!2sPu%C3%A1n%20890%2C%20B7603FFB%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1654527691181!5m2!1ses-419!2sar" width="300" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-md-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.0850017096427!2d-57.54792257363583!3d-38.01968811018571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc2f3ef7df15%3A0xd3c3ea375895be!2sOlavarr%C3%ADa%2C%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1654528565197!5m2!1ses-419!2sar" width="300" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </article>
+      </section>
     </main>
-    <footer class="footer">
-        <div class="footer__div1">
-            <h3>nosotros</h3>
-            <p>
-                Elaboramos momentos de alegría para compartir en familia.
+    
 
-                Por eso seguimos creando recetas únicas, para que las disfutes y compartas.
-            </p>
-        </div>
-        <div class="footer__div2">
-            <h3 >productos</h3>
-            <p>
-                Contamos con una amplia oferta de productos pensados para todos los gustos y necesidades.
-                Helados diet y helados veganos.
-                Postres, tortas, paletas, baldes familiares.
-            </p>
-        </div>
-        <div class="footer__div3">
-            <h3>contactos</h3>
-            <p>2291 427812</p>
-            <p>2291 345678</p>
-            <p>helados@gmail.com</p>
-        </div>
-        <div class="footer__copy">
-            &copy; Matias brandan 
-        </div>
-    </footer>
+    <footer class="content footer">
+      <div class="row m-1">
+        <div class="col-md-4">
+          <h3>nosotros</h3>
+          <p>
+              Elaboramos momentos de alegría para compartir en familia.
 
+              Por eso seguimos creando recetas únicas, para que las disfutes y compartas.
+          </p>
+      </div>
+      <div class="col-md-4">
+          <h3 >productos</h3>
+          <p>
+              Contamos con una amplia oferta de productos pensados para todos los gustos y necesidades.
+              Helados diet y helados veganos.
+              Postres, tortas, paletas, baldes familiares.
+          </p>
+      </div>
+      <div class="col-md-4">
+          <h3>contactos</h3>
+          <p>2291 427812</p>
+          <p>2291 345678</p>
+          <p>helados@gmail.com</p>
+      </div>
+      <div class="col-md-12 d-flex justify-content-center">
+        &copy; Matias brandan 
+      </div>
+      </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
