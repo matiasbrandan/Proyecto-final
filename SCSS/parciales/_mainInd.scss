@@ -1,0 +1,57 @@
+@import "./variables";
+
+@mixin tamaño ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+/*----MAIN INDEX----*/
+
+main{
+    margin: 1rem;
+    .art1{
+        margin-top: 1rem;
+        background-image: $gradienteR;
+        padding: 1rem 1rem 0;
+        height: 10rem;
+        border-radius: 2rem;
+    }
+    .art2{
+    margin-top: 3rem;
+    background-image: $gedienteL;
+    padding: 1rem 1rem 0;
+    height: 10rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    } 
+    .img-1{
+        @include tamaño(100%,80vh )
+    }
+
+    .carr-text {
+    color: #000;
+    }
+
+    .carr-img{
+        text-decoration: none;
+        color:#fffefe ;
+        font-size: 3rem;
+        &:hover{
+        color: rgb(0,255,133);
+        }
+    }
+
+    .producMain {
+        margin-top: 3rem;
+        background: rgb(243, 211, 105) ;
+        
+    }
+    
+    .img-2{
+        @include tamaño(100%,20rem )
+    }
+}
+
+   
+ 

@@ -1,0 +1,97 @@
+/*----RESET----*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*----HEADER----*/
+header {
+  background: #fdd26c; }
+
+/*----MAIN INDEX----*/
+main {
+  margin: 1rem; }
+  main .art1 {
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #f3d369, #8b793b, #524723);
+    padding: 1rem 1rem 0;
+    height: 10rem;
+    border-radius: 2rem; }
+  main .art2 {
+    margin-top: 3rem;
+    background-image: linear-gradient(to left, #f3d369, #8b793b, #524723);
+    padding: 1rem 1rem 0;
+    height: 10rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+  main .img-1 {
+    width: 100%;
+    height: 80vh; }
+  main .carr-text {
+    color: #000; }
+  main .carr-img {
+    text-decoration: none;
+    color: #fffefe;
+    font-size: 3rem; }
+    main .carr-img:hover {
+      color: #00ff85; }
+  main .producMain {
+    margin-top: 3rem;
+    background: #f3d369; }
+  main .img-2 {
+    width: 100%;
+    height: 20rem; }
+
+/*----CONTACTO----*/
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 5rem);
+  column-gap: 1rem; }
+  .formulario__nombre {
+    display: flex;
+    justify-content: end;
+    height: 2rem; }
+  .formulario #userName, .formulario #userMail {
+    border: none;
+    border-radius: 10px;
+    border-bottom: solid 1px #574c4c;
+    border-right: solid 1px #574c4c;
+    background-image: linear-gradient(to right, white, #fcce78); }
+  .formulario #userName:focus, .formulario #userMail:focus {
+    background: #fff; }
+  .formulario__mail {
+    grid-row: 2/3;
+    display: flex;
+    justify-content: end;
+    height: 2rem; }
+  .formulario #userMail:focus {
+    background: #fff; }
+  .formulario #userText {
+    resize: none;
+    border-radius: 10px; }
+  .formulario__submit {
+    grid-row: 3/4;
+    display: flex;
+    justify-content: end;
+    height: 2rem; }
+  .formulario__submit-input {
+    background: #ddb120;
+    border: none;
+    border-radius: 20%;
+    text-align: center;
+    width: 4rem; }
+  .formulario__submit-input:hover {
+    background: rgba(221, 177, 32, 0.705); }
+
+/*----FOOTER----*/
+.footer {
+  background: #fdd26c; }
+  .footer__h3 {
+    text-transform: uppercase;
+    font-family: "Times New Roman" Times serif; }
+  .footer__p {
+    font-family: "Times New Roman" Times serif;
+    font-size: 1.25rem; }

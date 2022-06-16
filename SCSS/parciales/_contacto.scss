@@ -1,0 +1,59 @@
+@import "./variables";
+
+
+/*----CONTACTO----*/
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 5rem);
+    column-gap: 1rem;
+    &__nombre{
+    display: flex;
+    justify-content: end;
+    height: 2rem;
+    }
+    #userName{
+        border: none;
+        border-radius: 10px;
+        border-bottom: solid 1px rgb(87, 76, 76);
+        border-right: solid 1px rgb(87, 76, 76);
+        background-image: linear-gradient(to right, white,  rgb(252, 206, 120));
+    }
+    #userName:focus{
+        background: #fff;
+    }
+    &__mail{
+        grid-row: 2/3;
+        display: flex;
+        justify-content: end;
+        height: 2rem;
+    }
+    #userMail{
+       @extend #userName;
+    }
+    #userMail:focus{
+        background: #fff;
+    }
+    #userText{
+        resize:none;
+        border-radius: 10px;
+    }
+    &__submit{
+        grid-row: 3/4;
+        display: flex;
+        justify-content: end;
+        height: 2rem;
+        
+    }
+    &__submit-input{
+        background: rgb(221, 177, 32);
+        border: none;
+        border-radius: 20%;
+        text-align: center;
+        width: 4rem;
+    }
+    &__submit-input:hover{
+        background: rgba(221, 177, 32, 0.705);
+    }
+}
+
