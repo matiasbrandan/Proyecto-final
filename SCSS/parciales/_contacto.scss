@@ -30,6 +30,7 @@
     }
     #userMail{
        @extend #userName;
+      border-radius: 20px;
     }
     #userMail:focus{
         background: #fff;

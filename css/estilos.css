@@ -67,6 +67,8 @@ main {
     display: flex;
     justify-content: end;
     height: 2rem; }
+  .formulario #userMail {
+    border-radius: 20px; }
   .formulario #userMail:focus {
     background: #fff; }
   .formulario #userText {
