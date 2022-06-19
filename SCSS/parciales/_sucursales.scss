@@ -1,0 +1,55 @@
+@import "./variables";
+
+/*----Sucursales----*/
+
+.gridContS{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 2rem 1fr;
+    grid-template-areas: "titulo"
+                         "texto"
+                         "mapa";
+    grid-row-gap: 10px;
+    margin-top: 1rem;
+    &__titulo{
+        grid-area: titulo;
+        .titulo{
+            text-align: center;
+        }
+    }
+    &__text{
+        grid-area: texto;
+        .text{
+            font-family: $fuenteTime;
+            text-align: center;
+        }
+    }
+    &__map{
+        grid-area: mapa;
+        width: 100%;
+        margin-top: 10px;
+        .mapaCont{
+            display: flex;
+            justify-content: center;
+            &__mapa{
+                width: 700px;
+                height: 450px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .gridContS{
+        &__map{
+            .mapaCont{
+                .mapaCont__mapa{
+                    width: 290px;
+                    height: 180px;
+                }
+            }
+        }
+    }
+    
+}

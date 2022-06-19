@@ -1,7 +1,7 @@
 @import "./variables";
 /*----FOOTER----*/
 $mapFooter: (
-    typoF: 'Times New Roman' Times serif ,
+    typoF: $fuenteTime ,
     upper: uppercase,
     tamañoF: 1.25rem,
     backG: $colorNav,

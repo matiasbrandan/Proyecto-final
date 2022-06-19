@@ -8,50 +8,103 @@
 
 main{
     margin: 1rem;
-    .art1{
-        margin-top: 1rem;
-        background-image: $gradienteR;
-        padding: 1rem 1rem 0;
-        height: 10rem;
-        border-radius: 2rem;
+}
+.img-1{
+    @include tamaño(100%,80vh )
+}
+@media screen and (max-width: 425px){
+    .img-1{
+        @include tamaño(100%,50vh )
     }
-    .art2{
-    margin-top: 3rem;
-    background-image: $gedienteL;
+}
+.art1{
+    margin-top: 1rem;
+    background-image: $gradienteR;
     padding: 1rem 1rem 0;
     height: 10rem;
     border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    } 
-    .img-1{
-        @include tamaño(100%,80vh )
-    }
+}
+.art2{
+margin-top: 3rem;
+background-image: $gedienteL;
+padding: 1rem 1rem 0;
+height: 10rem;
+border-radius: 2rem;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+} 
 
-    .carr-text {
-    color: #000;
-    }
-
-    .carr-img{
-        text-decoration: none;
-        color:#fffefe ;
-        font-size: 3rem;
-        &:hover{
-        color: rgb(0,255,133);
-        }
-    }
-
-    .producMain {
-        margin-top: 3rem;
-        background: rgb(243, 211, 105) ;
-        
-    }
-    
-    .img-2{
-        @include tamaño(100%,20rem )
+.carr-img{
+    text-decoration: none;
+    color:#fffefe ;
+    font-size: 3rem;
+    &:hover{
+    color: rgb(0,255,133);
     }
 }
 
-   
- 
+.producMain {
+    margin-top: 3rem;
+    background: rgb(243, 211, 105) ;
+    
+}
+
+.gridCont{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 4rem repeat(2,1fr);
+    grid-template-areas: "titulo titulo titulo titulo"
+                         "img1 img1 img2 img2"
+                         "img3 img3 img4 img4";
+    gap: .5rem;
+    background: $colorNav;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    &__titulo{
+        grid-area: titulo;
+        text-align: center;
+    }
+    &__img1{
+        grid-area: img1;
+        img{
+            @include tamaño (100%,20rem);
+            border-radius: 12px;
+        }
+    }
+    &__img2{
+        grid-area: img2;
+        img{
+            @include tamaño (100%,20rem);
+            border-radius: 12px;
+        }
+    }
+    &__img3{
+        grid-area: img3;
+        img{
+            @include tamaño (100%,20rem);
+            border-radius: 12px;
+        }
+    }
+    &__img4{
+        grid-area: img4;
+        img{
+            @include tamaño (100%,20rem);
+            border-radius: 12px;
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    
+    .gridCont{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3rem repeat(4,1fr);
+        grid-template-areas: "titulo"
+                             "img1"
+                             "img2"
+                             "img3"
+                             "img4";
+        
+    }
+}
