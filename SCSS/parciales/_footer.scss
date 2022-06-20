@@ -22,3 +22,15 @@ $mapFooter: (
         font-size: map-get($mapFooter, tamañoF);
     }
 }
+
+@media screen and (max-width: 425px) {
+    
+    .footer {
+        &__h3{
+            font-size: .8rem;
+        }
+        &__p{
+            font-size: .8rem;
+        }
+    }
+}

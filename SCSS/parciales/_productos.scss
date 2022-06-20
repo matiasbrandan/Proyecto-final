@@ -1,0 +1,105 @@
+@import "./variables";
+
+/*----Productos----*/
+
+.gridContP{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 3rem repeat(5,6rem) 10px;
+    grid-template-areas: "titulo titulo titulo"
+                         "cremas frutales dulceDL"
+                         "cremas frutales dulceDL"
+                         "cremas chocolates paletas"
+                         "cremas chocolates ."
+                         "cremas chocolates tortas"
+                         "cremas . .";
+    gap: 10px;
+    background-color: $colorNav;
+    border-radius: 20px;
+    margin-top: 1rem;
+    &__titulo{
+        grid-area:titulo ;
+        text-align: center;
+    }
+    &__cremas{
+        grid-area:cremas ;
+        display: flex;
+        justify-content: center;
+        .cremas__c{
+            width: 60%;
+        }
+    }
+    &__frutales{
+        grid-area:frutales ;
+        display: flex;
+        justify-content: center;
+        .frutales__c{
+            width: 60%;
+        }
+    }
+    &__dulceDL{
+        grid-area:dulceDL ;
+        display: flex;
+        justify-content: center;
+        .dulceDL__c{
+            width: 60%;
+        }
+    }
+    &__chocolates{
+        grid-area:chocolates ;
+        display: flex;
+        justify-content: center;
+        .chocolates__c{
+            width: 60%;
+        }
+    }
+    &__paletas{
+        grid-area:paletas ;
+        display: flex;
+        justify-content: center;
+        .paletas__c{
+            width: 60%;
+        }
+    }
+    &__tortas{
+        grid-area:tortas ;
+        display: flex;
+        justify-content: center;
+        .tortas__c{
+            width: 60%;
+        }
+    }
+}
+
+
+@media screen and (min-width: 728px) and (max-width:1025px) {
+
+    .gridContP{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3rem repeat(2,13rem) 5rem 9.5rem 8rem ;
+        grid-template-areas: "titulo titulo"
+                             "cremas frutales"
+                             "cremas dulceDL"
+                             "cremas chocolates"
+                             "paletas chocolates"
+                             "tortas chocolates";
+    }
+    
+}
+
+
+@media screen and (max-width: 425px) {
+
+    .gridContP{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3rem 1fr 10rem 20rem 10rem 10rem 8rem;
+        grid-template-areas: "titulo"
+                             "cremas"
+                             "frutales"
+                             "chocolates"
+                             "dulceDL"
+                             "paletas"
+                             "tortas";
+    }
+    
+}
