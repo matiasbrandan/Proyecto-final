@@ -8,6 +8,10 @@
 header {
   background: #fdd26c; }
 
+@media screen and (max-width: 320px) {
+  .imgLogo {
+    margin-right: 1rem; } }
+
 /*----MAIN INDEX----*/
 main {
   margin: 1rem; }
@@ -43,7 +47,13 @@ main {
   color: #fffefe;
   font-size: 3rem; }
   .carr-img:hover {
-    color: #00ff85; }
+    color: #ff0000; }
+
+.carr-text {
+  color: #000000;
+  text-shadow: 3px 3px 3px #ffff;
+  font-size: larger;
+  font-weight: 800; }
 
 .producMain {
   margin-top: 3rem;

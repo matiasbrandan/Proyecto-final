@@ -10,7 +10,8 @@ main{
     margin: 1rem;
 }
 .img-1{
-    @include tamaño(100%,80vh )
+    @include tamaño(100%,80vh );
+    
 }
 @media screen and (max-width: 425px){
     .img-1{
@@ -40,8 +41,16 @@ align-items: flex-end;
     color:#fffefe ;
     font-size: 3rem;
     &:hover{
-    color: rgb(0,255,133);
+    color: #ff0000;
     }
+}
+
+.carr-text{
+    color: #000000;
+    text-shadow: 3px 3px 3px #ffff;
+    font-size: larger;
+    font-weight: 800;
+    
 }
 
 .producMain {
