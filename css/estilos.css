@@ -226,7 +226,7 @@ main {
     grid-template-rows: 3rem 1fr 10rem 20rem 10rem 10rem 8rem;
     grid-template-areas: "titulo" "cremas" "frutales" "chocolates" "dulceDL" "paletas" "tortas"; } }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .gridContP {
     grid-template-rows: 3rem 1fr 10rem 24rem 17rem 10rem 8rem; } }
 
