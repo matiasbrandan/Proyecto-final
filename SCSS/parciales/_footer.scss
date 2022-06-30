@@ -12,6 +12,7 @@ $mapFooter: (
 .footer {
 
     background: map-get($mapFooter, backG);
+    padding-top: 10px;
 
     &__h3{
         text-transform: map-get($mapFooter, upper);
@@ -20,6 +21,12 @@ $mapFooter: (
     &__p{
         font-family: map-get($mapFooter, typoF);
         font-size: map-get($mapFooter, tamañoF);
+    }
+    &__icon {
+        display: flex;
+        svg {
+           margin-right: 10px;
+        }
     }
 }
 
